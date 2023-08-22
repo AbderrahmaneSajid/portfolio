@@ -13,18 +13,16 @@ const About = () => {
   const [ref, inView] = useInView({
     threshold : 0.5,
   })
-  return <section className='lg:pb-24 lg:pt-2 py-12 ' id='about' ref={ref}>
+  return <section className='  lg:pb-24 lg:pt-2 py-12 ' id='about' ref={ref}>
     <div className='container mx-auto'>
       <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center
       lg:gap-x-20 lg:gap-y-0'>
         {/* img */}
-        <motion.div variants={fadeIn('right',0.3)} initial="hidden"
-        whileInView={'show'} viewport={{once: false, amount:0.3}}>
+        <div>
         <img src={Image} alt=''className=" max-w-max mx-auto h-[420px] lg:flex lg:h-[560px] " ></img>
-      </motion.div>
+      </div>
         {/* text */}
-        <motion.div variants={fadeIn('left',0.5)} initial="hidden"
-        whileInView={'show'} viewport={{once: false, amount:0.3}}
+        <div 
         className='flex-1'
         >
           <h2 className='h2 text-[30px] text-accent mt-8'>About me.</h2>
@@ -52,7 +50,7 @@ const About = () => {
                 <FaInstagram />
               </a>
             </div>
-        </motion.div>
+        </div>
       </div>
     </div>
     </section>;
