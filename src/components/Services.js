@@ -27,12 +27,11 @@ const services = [
   }
 ]
 const Services = () => {
-  return <div className='py-16 pb-12 lg:pb-24 lg:pt-8' id='services'>
+  return <div className='  py-16 pb-12 lg:pb-24 lg:pt-8' id='services'>
     <div className='container mx-auto '>
       <div className='flex flex-col lg:flex-row '>
       {/* text nd image */}
-      <motion.div variants={fadeIn('right',0.3)} initial="hidden"
-        whileInView={'show'} viewport={{once: false, amount:0.3}}
+      <div 
       className='flex-1 lg:bg-services lg:bg-bottom lg:bg-no-repeat
       lg:mix-blend-lighten mb-12 lg:mb-0'>
         <h2 className='h2 text-accent mb-4'>What I Do.</h2>
@@ -42,11 +41,10 @@ const Services = () => {
           smooth={true}>
             <button className='btn btn-sm'>See My Projects</button>
             </Link>
-      </motion.div>
+      </div>
       {/* services */}
-      <motion.div variants={fadeIn('left',0.5)} initial="hidden"
-        whileInView={'show'} viewport={{once: false, amount:0.3}}
-      className='flex-1'>
+      <div 
+      className='flex flex-col justify-center items-center'>
         {/* services list */}
         <div>
           {services.map((service,index)=>{
@@ -67,7 +65,7 @@ const Services = () => {
             )
           })}
         </div>
-      </motion.div>
+      </div>
       </div>
     </div>
   </div>;

@@ -12,20 +12,18 @@ import {motion} from 'framer-motion'
 import {fadeIn} from '../variants'
 
 const Banner = () => {
-  return <section className=' lg:-mt-20 flex items-center ab:mt-100' id='home'>
+  return <section className=' w-screen h-screen pt-20 lg:pt-0  lg:-mt-20  flex items-center ' id='home'>
     <div  className='container mx-auto'>
       
       <div className='flex flex-col   lg:flex-row lg:items-center lg:gap-x-12'>
       
       {/* text */}
       <div className='flex-1 text-center font-secondary lg:text-left '>
-        <motion.h1 variants={fadeIn('right',0.3)} initial="hidden"
-        whileInView={'show'} viewport={{once: false, amount:0.7}}
+        <h1 
         className='text-[45px] font-bold leading-[0.8] lg:text-[70px]'>
           ABDERRAHMANE <span>SAJID</span>
-        </motion.h1>
-        <motion.div variants={fadeIn('right',0.4)} initial="hidden"
-        whileInView={'show'} viewport={{once: false, amount:0.7}}
+        </h1>
+        <div 
           className='mb-4 text-[28px]
          lg:text-[42px] font-secondary font-semibold 
          uppercase leading-[1]'>
@@ -41,14 +39,12 @@ const Banner = () => {
             wrapper='span'
             repeat={Infinity}
              />
-        </motion.div>
-        <motion.p variants={fadeIn('right',0.5)} initial="hidden"
-        whileInView={'show'} viewport={{once: false, amount:0.7}}
+        </div>
+        <p 
         className='mb-4 max-w-lg mx-auto lg:mx-0 text-[20px]  leading-[0.8] lg:text-[35px]'>
         Welcome to my portfolio !
-        </motion.p>
-        <motion.div variants={fadeIn('right',0.6)} initial="hidden"
-        whileInView={'show'} viewport={{once: false, amount:0.7}}
+        </p>
+        <div 
         className='flex max-w-max gap-x-6 items-center -mb-10
         mx-auto lg:mx-0'>
           <Link 
@@ -58,15 +54,14 @@ const Banner = () => {
           <button className='btn btn-lg'>Contact me</button>
           </Link>
           <a href='https://drive.google.com/file/d/1yEs1AnxssbFvXhadc55PZzlAjOQhp9XZ/view?usp=drive_link' target="_blank" className='text-gradient btn-link' >View Resume</a>
-        </motion.div>
+        </div>
         
       </div>
       {/* image */}
-      <motion.div  variants={fadeIn('left',0.3)} initial="hidden"
-        whileInView={'show'} viewport={{once: false, amount:0.7}}
+      <div  
       className=" h-70 w-80  max-w-max mx-auto mt-10">
         <img src={Image} alt='' ></img>
-      </motion.div>
+      </div>
       </div>
     </div>
     </section>;

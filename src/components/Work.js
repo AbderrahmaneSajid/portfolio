@@ -5,7 +5,7 @@ import {motion} from 'framer-motion'
 import {fadeIn} from '../variants'
 //images
 import Img1 from '../assets/mooodle.png'
-import Img2 from '../assets/portfolio-img2.png'
+import Img2 from '../assets/inef.png'
 import Img3 from '../assets/piatoo.png'
 import Img4 from '../assets/Website Mockup 1.png'
 import Img5 from '../assets/Lab.png'
@@ -15,8 +15,7 @@ const Work = () => {
   return <section className=' py-16 lg:pb-24 lg:pt-8' id='work'>
     <div className='container mx-auto'> 
       <div className='flex flex-col lg:flex-row gap-x-10'>
-        <motion.div variants={fadeIn('right',0.3)} initial="hidden"
-        whileInView={'show'} viewport={{once: false, amount:0.3}}
+        <div 
         className='flex-1 flex flex-col gap-y-10 mb-10 lg:mb-0'>
           {/* text */}
           <div>
@@ -47,28 +46,28 @@ const Work = () => {
               <span className='text-3xl text-white'>VLab</span>
             </div>
           </div>
-          {/* image */}
-          <div className='group relative overflow-hidden border-2 border-white/50 lg:h-[320px] lg:w-[570px]
+         {/* image */}
+        <div className='group relative overflow-hidden border-2 border-white/50 lg:h-[320px] lg:w-[570px]
           rounded-xl'>
             {/* overlay */}
             <div className='group-hover:bg-black/70 w-full h-full absolute
              z-40 transition-all duration-300'></div>
             {/* img */}
-            
+            <img className='group-hover:scale-125 transition-all duration-500 lg:h-[340px] lg:w-[570px]' 
+            src={Img1} alt=''></img>
             {/* pretitle */}
             <div className='absolute -bottom-full left-12
             group-hover:bottom-24 transition-all duration-500 z-50'>
-              <span className='text-gradient'>Web Devolopment</span>
+              <span className='text-gradient'>UI/UX Design</span>
               </div>
             {/* title */}
             <div className='absolute -bottom-full left-12
             group-hover:bottom-14 transition-all duration-700 z-50'> 
-              <span className='text-3xl text-white'>INE Food</span>
+              <span className='text-3xl text-white'>MoodleINPT v2.0</span>
             </div>
           </div>
-        </motion.div>
-        <motion.div variants={fadeIn('left',0.2)} initial="hidden"
-        whileInView={'show'} viewport={{once: false, amount:0.3}}
+        </div>
+        <div 
         className='flex-1 flex flex-col gap-y-10'>
           {/* image */}
         <div className='group relative overflow-hidden border-2 border-white/50 lg:h-[320px] lg:w-[570px]
@@ -110,27 +109,28 @@ const Work = () => {
               <span className='text-3xl text-white'>Piato.</span>
             </div>
           </div>
+          
           {/* image */}
-        <div className='group relative overflow-hidden border-2 border-white/50 lg:h-[320px] lg:w-[570px]
+          <div className='group relative overflow-hidden border-2 border-white/50 lg:h-[320px] lg:w-[570px]
           rounded-xl'>
             {/* overlay */}
             <div className='group-hover:bg-black/70 w-full h-full absolute
              z-40 transition-all duration-300'></div>
             {/* img */}
-            <img className='group-hover:scale-125 transition-all duration-500 lg:h-[340px] lg:w-[570px]' 
-            src={Img1} alt=''></img>
+            <img className='group-hover:scale-125 transition-all duration-500 ' 
+            src={Img2} alt=''></img>
             {/* pretitle */}
             <div className='absolute -bottom-full left-12
             group-hover:bottom-24 transition-all duration-500 z-50'>
-              <span className='text-gradient'>UI/UX Design</span>
+              <span className='text-gradient'>Web Devolopment</span>
               </div>
             {/* title */}
             <div className='absolute -bottom-full left-12
             group-hover:bottom-14 transition-all duration-700 z-50'> 
-              <span className='text-3xl text-white'>MoodleINPT v2.0</span>
+              <span className='text-3xl text-white'>INE Food</span>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   </section>;

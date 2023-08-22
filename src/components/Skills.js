@@ -23,20 +23,17 @@ import {fadeIn} from '../variants'
 
 
 const Skills = () => {
-  return <div className='py-16 lg:pb-24 lg:pt-8' id='skills'>
+  return <div className='  py-16 lg:pb-24 lg:pt-8' id='skills'>
     <div className='container mx-auto'>
       <div>
         {/* text */}
-        <motion.div variants={fadeIn('right',0.3)} initial="hidden"
-        whileInView={'show'} viewport={{once: false, amount:0.3}}>
+        <div >
         <h2 className='h2 leading-tight text-accent mb-4'>SKILLS.</h2>
         <h3 className='h3 text-[22px] mb-4'>I have worked with.</h3>
-        </motion.div>
+        </div>
         {/* images */} 
-        <div className='flex  flex-wrap gap-6 lg:gap-10'>
-        <motion.div variants={fadeIn('left',0.5)} initial="hidden"
-        whileInView={'show'} viewport={{once: false, amount:0.3}}
-        className='flex flex-wrap gap-6 lg:gap-10 mx-auto '>
+        <div 
+        className='flex justify-center items-center flex-wrap gap-6 lg:gap-10  '>
         <div className=' group relative overflow-hidden border-2 border-white/50
           rounded-xl flex items-center justify-center h-[102px] w-[102px] lg:h-[160px] lg:w-[160px] '>
             {/* overlay */}
@@ -151,10 +148,8 @@ const Skills = () => {
               <span className='text-xl text-white'>React Library</span>
             </div>
               </div>
-              </motion.div>
-              <motion.div variants={fadeIn('right',0.5)} initial="hidden"
-        whileInView={'show'} viewport={{once: false, amount:0.3}}
-        className='flex flex-wrap gap-6 lg:gap-10 mx-auto '>
+              
+              
               <div className=' group relative overflow-hidden border-2 border-white/50
           rounded-xl flex items-center justify-center h-[102px] w-[102px] lg:h-[160px] lg:w-[160px] '>
             {/* overlay */}
@@ -269,10 +264,9 @@ const Skills = () => {
               <span className='text-xl text-white'>UI/UX Design</span>
             </div>
               </div>
-              </motion.div>
-              <motion.div variants={fadeIn('left',0.6)} initial="hidden"
-        whileInView={'show'} viewport={{once: false, amount:0.3}}
-               className='flex flex-wrap gap-6 lg:gap-10 mx-auto '>
+              
+              
+              
               <div className=' group relative overflow-hidden border-2 border-white/50
           rounded-xl flex items-center justify-center h-[102px] w-[102px] lg:h-[160px] lg:w-[160px] '>
             {/* overlay */}
@@ -330,8 +324,8 @@ const Skills = () => {
               <span className='text-xl text-white'>Agile Methodology</span>
             </div>
               </div>
-              </motion.div>
               </div>
+              
               
       </div>
     </div>
