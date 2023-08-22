@@ -6,10 +6,7 @@ import Logo from '../assets/logoo.png'
 import { Link } from 'react-scroll'
 //type animation
 import {TypeAnimation} from 'react-type-animation'
-//motion
-import {motion} from 'framer-motion'
-//variants
-import {fadeIn} from '../variants'
+
 
 const Banner = () => {
   return <section className=' w-screen h-screen pt-20 lg:pt-0  lg:-mt-20  flex items-center ' id='home'>
